@@ -1,0 +1,84 @@
+.projects-container{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    width: 100vw;
+    height: 60vh;
+}
+.custom-swiper {
+    height:60vh; /* Adjust the height as needed */
+    width: 100vw;
+  }
+  
+.project-item {
+    animation: appear 0.6s ease forwards;
+    animation-delay: 0.3s; 
+    position: relative; /* Required for the overlay */
+    border-radius: 12px;
+    height: 30vh;
+    width: 40vw;
+    margin-left: 2rem;
+    margin-top: 5vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.6);
+    overflow: hidden; /* To ensure overlay stays within the border */
+    transition: all 0.3s ease; /* Smooth scaling on hover */
+}
+
+.project-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(19, 9, 90, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 100% 300%; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.project-item:hover::before {
+    animation: slideDown 0.6s forwards;
+    opacity: 1;
+}
+
+.project-item:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover */
+    box-shadow: 8px 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #13095a; 
+    padding: 1rem;
+}
+
+.project-content {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #13095a; 
+    text-align:justify;
+}
+.projectsection {
+    font-weight: bold;
+    display: inline-block;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+  
+  .projectsection.translate-up {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  

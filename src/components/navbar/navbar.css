@@ -1,0 +1,45 @@
+.Navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    z-index: 3;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.NavItem .button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #13095a;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.NavItem .button:hover {
+    color: #5f4adb;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.line {
+    height: 2px;
+    background-color: #13095a;
+    margin-top: 4px;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.NavItem:hover .line {
+    width: 100%;
+}

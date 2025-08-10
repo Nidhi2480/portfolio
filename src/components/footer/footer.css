@@ -1,0 +1,30 @@
+.footer {
+    background-color: rgb(238, 236, 236);
+    color: #181818;
+    padding: 20px 0;
+    height: 25vh;
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #00bcd4;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
