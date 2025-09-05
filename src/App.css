@@ -12,12 +12,17 @@
   pointer-events: none; /* Allows clicks to pass through */
 }
 
+@media (max-width: 1035px) {
+    .scroll-pillar-container {
+      opacity: 0;
+    }
+  }
 .scroll-pillar-container {
   position: fixed;
-  top:5rem;
-  right: 20px;
+  top:7rem;
+  right: 30px;
   width:.5rem;
-  height: 75vh;
+  height: 62vh;
   border-radius: 5px;
   overflow: hidden;
   z-index: 2;

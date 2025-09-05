@@ -1,9 +1,9 @@
 .projects-container{
     background-color: rgb(238, 236, 236);
-    display: flex;
     align-items: center;
-    padding: 2rem;
     width: 100vw;
+    margin: 0 auto;
+
     height: 60vh;
 }
 .custom-swiper {
@@ -11,6 +11,23 @@
     width: 100vw;
   }
   
+  .github-link {
+    color: #333;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #000;
+}
+.project-tech {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+     transition: all 0.3s ease; /* Smooth scaling on hover */
+}
+
+
 .project-item {
     animation: appear 0.6s ease forwards;
     animation-delay: 0.3s; 
@@ -18,7 +35,7 @@
     border-radius: 12px;
     height: 30vh;
     width: 40vw;
-    margin-left: 2rem;
+    margin-left: 5rem;
     margin-top: 5vw;
     background-color: rgb(255, 255, 255);
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.6);
@@ -55,6 +72,9 @@
 .project-item:hover {
     transform: scale(1.02); /* Slight scaling effect on hover */
     box-shadow: 8px 16px 32px rgba(0, 0, 0, 0.5);
+    .project-tech {
+    color: #000000;
+}
 }
 
 .project-title {
@@ -74,6 +94,7 @@
     display: inline-block;
     transform: translateX(-30px);
     opacity: 0;
+    font-size: 1.5rem;
     transition: transform 0.6s ease, opacity 0.6s ease;
   }
   
@@ -81,4 +102,30 @@
     transform: translateX(0);
     opacity: 1;
   }
+@media (max-width: 1035px) {
+    .projects-container {
+      height: 70vh;
+      padding: 2vh 2vw;
+    }
   
+    .custom-swiper {
+      width: 100vw;
+      height: auto;
+    }
+  
+    .project-item {
+      width: 85vw;
+      height: 30vh;
+      margin: 6rem auto;
+    }
+  
+    .project-title {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+    }
+  
+    .project-content {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }

@@ -1,20 +1,39 @@
 import React from "react";
-import "./footer.css"; 
+import "./footer.css";
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <section id="footer">
         <footer className="footer">
-            <div className="footer-content">
-                <p>© {new Date().getFullYear()} Nidhin. All rights reserved.</p>
+            <div className="footer-container">
+                <p className="footer-text">© {currentYear} Nidhin. All rights reserved.</p>
                 <div className="social-links">
-                    <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="mailto:nidhin1089@gmail.com">Email</a>
+                    <a 
+                        href="https://github.com/Nidhi2480" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="Visit Nidhin's GitHub"
+                    >
+                        GitHub
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/in/nidhin-sajeev-bb7227147" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="Visit Nidhin's LinkedIn"
+                    >
+                        LinkedIn
+                    </a>
+                    <a 
+                        href="mailto:nidhin1089@gmail.com" 
+                        aria-label="Send an email to Nidhin"
+                    >
+                        Email
+                    </a>
                 </div>
             </div>
         </footer>
-        </section>
     );
 }
 

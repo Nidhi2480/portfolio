@@ -1,8 +1,7 @@
 /* AboutMe.css */
 
 .about-me-container {
-    width: 100vw;
-    margin: 0 auto;
+    width: 100%;
 
     justify-content: center;
     font-family: Arial, sans-serif;
@@ -122,4 +121,13 @@
   .skill-section.translate-up {
     transform: translateX(0);
     opacity: 1;
+  }
+
+  @media (max-width: 1035px) {
+    .skill-item {
+      width: 28vw;
+    }
+    .about-me-container {
+      height: 80vh;
+    }
   }
