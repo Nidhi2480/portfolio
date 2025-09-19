@@ -7,6 +7,7 @@
     font-family: Arial, sans-serif;
     background-color: rgb(238, 236, 236);
     border-radius: 8px;
+    height: 90vh;
   }
   
   .about-me-container h1 {
@@ -19,9 +20,17 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    transform: translateY(50px);
+    opacity: 0;
+    
+    transition: transform 0.6s ease, opacity 0.6s ease;
     margin-top: 1.5rem;
   }
 
+.about-me-content.translate-up {
+    transform: translateY(0);
+    opacity: 1;
+  }
 .skill-item:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);  /* Apply shadow */
   border-radius: 10%;  /* Optional: round the icon if you want */
@@ -112,14 +121,14 @@
   .skill-section {
     font-weight: bold;
     display: inline-block;
-    transform: translateX(-30px);
+    transform: translateY(50px);
     opacity: 0;
     font-size: 1.5rem;
     transition: transform 0.6s ease, opacity 0.6s ease;
   }
   
   .skill-section.translate-up {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 

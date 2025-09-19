@@ -1,8 +1,9 @@
 .footer {
-    background-color: #f4f4f4;
+    background-color: rgb(255, 255, 255);;
     color: #333;
     padding: 30px 20px;
     text-align: center;
+    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-top: 1px solid #ddd;
     box-shadow:0 -8px 32px rgba(0, 0, 0, 0.5);
@@ -11,6 +12,8 @@
 .footer-container {
     max-width: 1000px;
     margin: 0 auto;
+    height: 20vh;
+    margin-top: 10vh;
 }
 
 .footer-text {

@@ -1,14 +1,21 @@
 .projects-container{
     background-color: rgb(238, 236, 236);
-    align-items: center;
     width: 100vw;
     margin: 0 auto;
 
-    height: 60vh;
+    height: 70vh;
 }
 .custom-swiper {
     height:60vh; /* Adjust the height as needed */
     width: 100vw;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 0.6s ease;
+  }
+
+  .custom-swiper.translate-up {
+    transform: translateX(0);
+    opacity: 1;
   }
   
   .github-link {
@@ -63,6 +70,19 @@
     z-index: 1;
     pointer-events: none;
 }
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Optional: Add padding around the icon */
+.github-link svg {
+    margin-left: 1rem;
+}
+
 
 .project-item:hover::before {
     animation: slideDown 0.6s forwards;
@@ -91,9 +111,11 @@
 }
 .projectsection {
     font-weight: bold;
+    margin-bottom: 5vh;
     display: inline-block;
     transform: translateX(-30px);
     opacity: 0;
+    background-color: rgb(238, 236, 236);
     font-size: 1.5rem;
     transition: transform 0.6s ease, opacity 0.6s ease;
   }
@@ -102,6 +124,7 @@
     transform: translateX(0);
     opacity: 1;
   }
+
 @media (max-width: 1035px) {
     .projects-container {
       height: 70vh;
